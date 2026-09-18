@@ -4,7 +4,6 @@ version = "0.1.0"
 description = "여행 일정 LLM 에이전트 만들기 과제 스켈레톤"
 requires-python = ">=3.10"
 dependencies = [
-    "openai>=1.60",
-    "streamlit>=1.40",
+    "google-adk>=1.0.0",
     "python-dotenv>=1.0",
 ]
