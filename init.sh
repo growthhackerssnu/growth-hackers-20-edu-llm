@@ -25,10 +25,11 @@ uv sync
 
 if [ ! -f .env ]; then
   cp .env.example .env
-  echo ".env 를 만들었습니다. OPENAI_API_KEY 를 채워 넣으세요."
+  echo ".env 를 만들었습니다. GOOGLE_API_KEY 를 채워 넣으세요."
 fi
 
 uv run python mock_api.py
+uv run python -m compileall -q tools.py prompts.py travel_agent mock_api.py
 
 echo
-echo "준비 끝. 데모 실행:  uv run streamlit run app.py"
+echo "준비 끝. 데모 실행:  uv run adk web ."
