@@ -1,3 +1,4 @@
+김민기
 # 여행 일정 에이전트 스켈레톤 (Google ADK)
 
 Google Agent Development Kit(ADK)로 여행 일정 에이전트를 만드는 스켈레톤입니다. `get_weather`는 완성된 예시이고, 나머지 도구와 시스템 프롬프트를 직접 완성합니다. ADK 웹 플레이그라운드에서 대화 이력과 툴 호출을 확인할 수 있습니다.
@@ -76,5 +77,3 @@ uv run python -c "from tools import get_weather; print(get_weather('Paris', '202
 | 예외 처리 | 없는 도시나 잘못된 날짜에도 에이전트가 무너지지 않는가 |
 | 프롬프트 | 툴을 제때 쓰고 사실을 지어내지 않으며 일정 형식이 일관적인가 |
 | 결과 | 날짜 순서·이동·예산이 자연스러운가 |
-
-김민기
