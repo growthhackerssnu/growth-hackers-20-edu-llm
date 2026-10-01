@@ -8,7 +8,7 @@ Google Agent Development Kit(ADK)로 여행 일정 에이전트를 만드는 스
 
 준비물은 Python 3.10 이상과 `uv`입니다. 아래 명령으로 의존성과 로컬 환경을 준비합니다.
 
-```bash
+```bash 
 sh init.sh
 ```
 
