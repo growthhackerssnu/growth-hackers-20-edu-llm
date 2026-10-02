@@ -35,7 +35,7 @@ uv run adk web .
 uv run adk web . --port 8001
 ```
 
-API 키 없이도 mock API 점검, 도구 import, 완성된 날씨 예시를 확인할 수 있습니다. 나머지 도구는 현재 TODO 문자열을 반환합니다.
+API 키 없이도 mock API 점검, 도구 import, 항공편·숙소·장소·날씨 조회 예시를 확인할 수 있습니다.
 
 ```bash
 uv run python mock_api.py
@@ -48,8 +48,8 @@ uv run python -c "from tools import get_weather; print(get_weather('Paris', '202
 | 파일 | 내용 | 수정 |
 |---|---|---|
 | `travel_agent/agent.py` | ADK `root_agent`: 모델, 프롬프트, 툴을 연결 | △ |
-| `tools.py` | ADK가 호출하는 여행 정보 함수. 날씨는 예시, 나머지는 TODO | ✓ |
-| `prompts.py` | 에이전트 역할·규칙·출력 형식 TODO | ✓ |
+| `tools.py` | ADK가 호출하는 여행 정보 함수와 응답 형식 변환 | ✓ |
+| `prompts.py` | 에이전트 역할·도구 규칙·일정 출력·실패 처리 | ✓ |
 | `mock_api.py` | 가짜 여행 API 원본 데이터 | ✗ |
 | `init.sh` | uv 및 의존성 설치·환경 준비 | ✗ |
 
